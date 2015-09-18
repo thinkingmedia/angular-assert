@@ -328,4 +328,4 @@
         Assert
     ]);
 
-})(angular.module('angular-assert',[]));
+})(angular.module('ngAssert',[]));
