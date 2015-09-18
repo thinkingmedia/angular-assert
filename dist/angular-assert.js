@@ -323,7 +323,6 @@
     }
 
     app.service('$assert', [
-        '$log',
         '$injector',
         Assert
     ]);
