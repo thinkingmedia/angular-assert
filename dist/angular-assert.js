@@ -198,7 +198,7 @@
         var types = [
             ['Array', angular],
             ['BlankObject', angular],
-            ['Boolean', angular],
+            ['Boolean', assertMethods],
             ['Date', angular],
             ['Element', angular],
             ['Function', angular],
