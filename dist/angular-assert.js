@@ -255,7 +255,7 @@
          * @returns {$assert}
          */
         this.isInstanceOf = function (value, type) {
-            var inst = $injector.get(type);
+            var inst = angular.isString(type) ? $injector.get(type) : type;
             if (!inst) {
                 throw new Error('invalid type for isInstanceOf: ' + type);
             }
@@ -263,7 +263,7 @@
             if (angular.isUndefined(value)) {
                 throw new Error(caller + ' -> Parameter is undefined but should be an instance of ' + type);
             }
-            if (value.constructor !== inst) {
+            if (!(value instanceof inst)) {
                 throw new Error(caller + ' -> Parameter is not an instance of ' + type);
             }
             return this;
@@ -276,11 +276,11 @@
          * @returns {$assert}
          */
         this.isInstanceOfOrUndefined = function (value, type) {
-            var inst = $injector.get(type);
+            var inst = angular.isString(type) ? $injector.get(type) : type;
             if (!inst) {
                 throw new Error('invalid type for isInstanceOf: ' + type);
             }
-            if (!angular.isUndefined(value) && value.constructor !== inst) {
+            if (!angular.isUndefined(value) && !(value instanceof inst)) {
                 var caller = (this.isInstanceOfOrUndefined.caller && this.isInstanceOfOrUndefined.caller.name) || '??';
                 throw new Error(caller + ' -> Parameter is not an instance of ' + type + ' and is not undefined.');
             }
@@ -294,11 +294,11 @@
          * @returns {$assert}
          */
         this.isInstanceOfOrNull = function (value, type) {
-            var inst = $injector.get(type);
+            var inst = angular.isString(type) ? $injector.get(type) : type;
             if (!inst) {
                 throw new Error('invalid type for isInstanceOf: ' + type);
             }
-            if (value !== null && value.constructor !== inst) {
+            if (value !== null && !(value instanceof inst)) {
                 var caller = (this.isInstanceOf.caller && this.isInstanceOf.caller.name) || '??';
                 throw new Error(caller + ' -> Parameter is not an instance of ' + type + ' and is not null.');
             }
