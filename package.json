@@ -1,0 +1,47 @@
+{
+  "name": "angular-assert",
+  "description": "AngularJS service for asserting parameter values in function calls.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/thinkingmedia/angular-assert",
+  "author": {
+    "name": "ThinkingMedia",
+    "email": "support@thinkingmedia.ca",
+    "url": "http://www.thinkingmedia.ca"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thinkingmedia/angular-assert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thinkingmedia/angular-assert/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/thinkingmedia/angular-assert/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "files": [
+    "tasks",
+    "LICENSE"
+  ],
+  "dependencies": {
+  }
+}
