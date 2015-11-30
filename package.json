@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13"
+    "grunt-cli": "^0.1.13",
+    "grunt-thinkingmedia": "^0.1.8"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
@@ -42,6 +43,5 @@
     "tasks",
     "LICENSE"
   ],
-  "dependencies": {
-  }
+  "dependencies": {}
 }
