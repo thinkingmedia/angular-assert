@@ -1,3 +1,5 @@
+/node_modules
+/temp
 /.extra
 /.idea
 /bower_components

@@ -12,10 +12,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         config: {
             name: 'angular-assert',
+            webroot: './src',
             build: './dist',
             src: [
                 './src'
-            ]
+            ],
+            templates: false
         }
     });
 };

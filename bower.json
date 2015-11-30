@@ -1,6 +1,6 @@
 {
   "name": "angular-assert",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/angular-assert.js",
   "description": "AngularJS service used to assert values are as expected in JavaScript functions.",
   "homepage": "https://github.com/thinkingmedia/angular-assert",
@@ -22,6 +22,7 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "src",
     "node_modules",
     "bower_components",
     "tests",

@@ -1,7 +1,7 @@
 {
   "name": "angular-assert",
   "description": "AngularJS service for asserting parameter values in function calls.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/thinkingmedia/angular-assert",
   "author": {
     "name": "ThinkingMedia",
@@ -25,8 +25,7 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "grunt test",
-    "postinstall": "bower install"
+    "test": "grunt test"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
