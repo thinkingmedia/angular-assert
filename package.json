@@ -33,7 +33,7 @@
     "grunt-thinkingmedia": "^0.1.8"
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin"
